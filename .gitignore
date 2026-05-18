@@ -25,3 +25,15 @@ dist-ssr
 
 # Claude Code
 .claude/
+
+# Python (defensive — none in this repo, but in case)
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Env files
+.env
+.env.local
+.env.*.local
