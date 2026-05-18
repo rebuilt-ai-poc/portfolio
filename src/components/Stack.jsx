@@ -7,13 +7,13 @@ export const Stack = () => {
   return (
     <motion.section
       id="stack"
-      className="relative pt-[160px] pb-16"
+      className="relative pt-[120px] md:pt-[160px] pb-16 scroll-mt-24"
       initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="04" kicker="TOOLS" title="Stack." ghost="04" />
+      <SectionHeader index="06" kicker="TOOLS" title="Stack." ghost="06" />
 
       <p className="text-text-body text-[16px] mb-12 max-w-[60ch]">
         Comfortable with whatever platform the work calls for. Current rotation:

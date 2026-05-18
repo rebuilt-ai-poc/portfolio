@@ -12,23 +12,23 @@ const meta = [
 ];
 
 const stats = [
-  { value: 11, suffix: '+', label: 'Production systems' },
-  { value: 4,  suffix: '',  label: 'Countries shipped' },
-  { value: 6,  suffix: '',  label: 'Industries' },
-  { value: 40, suffix: '%', label: 'Dev time reduced' },
+  { value: 11, suffix: '+', label: 'AI systems shipped across enterprise + startups' },
+  { value: 4,  suffix: '',  label: 'Countries · India · Malaysia · Singapore · Australia' },
+  { value: 6,  suffix: '',  label: 'Industries · health · finance · retail · consulting · hiring · fitness' },
+  { value: 40, suffix: '%', label: 'Faster builds via reusable AI modules' },
 ];
 
 export const About = () => {
   return (
     <motion.section
       id="about"
-      className="relative pt-[160px] pb-16"
+      className="relative pt-[120px] md:pt-[160px] pb-16 scroll-mt-24"
       initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="02" kicker="WHO" title="Background." ghost="02" />
+      <SectionHeader index="04" kicker="WHO" title="Background." ghost="04" />
 
       <div className="flex flex-col md:flex-row gap-12 md:gap-8">
         {/* Left Meta */}

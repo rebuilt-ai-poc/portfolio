@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowDown, ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowDown, ArrowRight, Sparkles, Briefcase } from 'lucide-react';
 import { MonoTag } from './primitives/MonoTag';
 import { Button } from './primitives/Button';
 import { LiveClock } from './primitives/LiveClock';
@@ -25,11 +25,11 @@ const SKILL_TAGS = ['GenAI', 'RAG', 'Agentic AI', 'Azure', 'GCP', 'AWS', 'LangGr
 
 export const Hero = () => {
   return (
-    <GlobeHero id="hero" className="min-h-[100svh]">
+    <GlobeHero id="hero" className="min-h-[100svh] overflow-x-hidden">
       <div className="aurora pointer-events-none" />
 
       {/* Inner max-width container — hero itself spans full viewport */}
-      <div className="relative mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12 xl:px-16">
+      <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12 xl:px-16">
 
       {/* Metadata / status row — sits below the fixed navbar */}
       <div className="relative z-10 flex items-center justify-between gap-4 pt-[clamp(96px,12vh,128px)]">
@@ -57,8 +57,8 @@ export const Hero = () => {
             <span className="flex items-center justify-center w-5 h-5 rounded-full bg-accent/20">
               <Sparkles size={11} className="text-accent" />
             </span>
-            <span className="font-sans text-[12px] font-medium tracking-[0.16em] uppercase text-white">
-              Currently engineering at Deloitte TT LLP
+            <span className="font-sans text-[11px] sm:text-[12px] font-medium tracking-[0.14em] sm:tracking-[0.16em] uppercase text-white">
+              AI Solution Architect · Deloitte TT LLP · Enterprise + Startup AI
             </span>
           </span>
 
@@ -80,9 +80,9 @@ export const Hero = () => {
           initial="hidden"
           animate="show"
           variants={fadeUp}
-          className="max-w-5xl text-[clamp(40px,7.4vw,92px)] font-semibold tracking-tightest leading-[0.95] text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.6)]"
+          className="max-w-5xl text-[clamp(34px,7vw,92px)] font-semibold tracking-tightest leading-[0.98] text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.6)] break-words"
         >
-          AI Solution Architect
+          Production-grade AI systems<br className="hidden sm:block" /> for <span className="text-accent">real business outcomes.</span>
         </motion.h1>
 
         {/* 3. Subheading */}
@@ -91,9 +91,9 @@ export const Hero = () => {
           initial="hidden"
           animate="show"
           variants={fadeUp}
-          className="max-w-3xl text-[17px] md:text-[19px] text-neutral-200 leading-relaxed"
+          className="max-w-3xl text-[16px] md:text-[19px] text-neutral-300 leading-relaxed"
         >
-          Building production-grade GenAI, RAG, and agentic AI systems that turn complex enterprise problems into scalable real-world products — shipped across Malaysia, India, Singapore, and Australia.
+          I design and build GenAI, RAG, agentic workflow, and automation products for enterprises and startups — reducing manual work, accelerating decisions, and turning complex operations into scalable AI systems.
         </motion.p>
 
         {/* 4. Skill tags — Glass UI */}
@@ -123,20 +123,26 @@ export const Hero = () => {
           className="flex flex-wrap items-center gap-4 md:gap-6"
         >
           <Magnetic>
-            <Button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
-              View Projects <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
+            <Button onClick={() => {
+              window.dispatchEvent(new CustomEvent('prefill-contact', { detail: { type: 'AI Strategy Sprint', subject: 'I want to build an AI system.' } }));
+              document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
+              Build an AI System <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
             </Button>
           </Magnetic>
           <Magnetic>
-            <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-              Contact Me
+            <Button variant="secondary" onClick={() => {
+              window.dispatchEvent(new CustomEvent('prefill-contact', { detail: { type: 'Hiring / Job Opportunity', subject: 'Hiring for an AI / GenAI role.' } }));
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
+              <Briefcase size={15} /> Hire / Recruit Me
             </Button>
           </Magnetic>
           <Link
             to="/resume"
             className="group hidden sm:flex items-center gap-1 font-mono text-[13px] uppercase tracking-mono text-neutral-300 hover:text-white transition-soft ml-2 link-underline"
           >
-            Resume
+            View Resume
             <ArrowDown size={14} className="group-hover:translate-y-0.5 transition-transform" />
           </Link>
         </motion.div>

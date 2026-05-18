@@ -17,9 +17,9 @@ export const Navbar = () => {
   }, []);
 
   const links = [
-    { label: 'Projects', href: '#projects' },
+    { label: 'Work',     href: '#projects' },
+    { label: 'Services', href: '#services' },
     { label: 'About',    href: '#about' },
-    { label: 'Stack',    href: '#stack' },
     { label: 'Contact',  href: '#contact' },
   ];
 
@@ -36,7 +36,7 @@ export const Navbar = () => {
   return (
     <>
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-bg-base/75 backdrop-blur-[14px] border-b border-hair' : 'bg-transparent border-b border-transparent'}`}>
-        <div className="max-w-shell mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+        <div className="max-w-shell mx-auto px-5 sm:px-6 md:px-10 py-4 flex items-center justify-between">
 
           {/* Left: Monogram */}
           <Link to="/" className="font-sans font-medium text-[22px] text-white tracking-tightest leading-none flex items-center gap-1.5 group">

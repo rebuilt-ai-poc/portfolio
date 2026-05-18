@@ -8,18 +8,17 @@ export const Projects = () => {
   return (
     <motion.section
       id="projects"
-      className="relative pt-[160px] pb-16"
+      className="relative pt-[120px] md:pt-[160px] pb-16 scroll-mt-24"
       initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
       <SectionHeader
-        index="01"
-        kicker="RECENTLY"
-        title="Selected work, 2021–present."
-        linkLabel="ALL WORK"
-        ghost="01"
+        index="02"
+        kicker="SELECTED WORK"
+        title="Production-grade AI systems, 2021–present."
+        ghost="02"
       />
 
       <div className="flex items-center justify-between mb-6 px-1">

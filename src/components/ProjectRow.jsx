@@ -19,7 +19,7 @@ export const ProjectRow = ({ project }) => {
       {/* hover-fill bar from left */}
       <span className="absolute left-0 top-0 h-px w-0 bg-accent group-hover:w-full transition-all duration-700 ease-out" />
 
-      <div className="py-6 flex flex-col md:flex-row md:items-center gap-6 relative">
+      <div className="py-6 flex flex-col md:flex-row md:items-center gap-5 md:gap-6 relative">
 
         {/* ID */}
         <div className="hidden md:flex w-8 shrink-0 font-mono text-[11px] tracking-mono text-text-muted group-hover:text-accent transition-colors">
@@ -40,7 +40,7 @@ export const ProjectRow = ({ project }) => {
 
         {/* Title */}
         <div className="flex-1 min-w-0">
-          <h3 className="font-sans font-medium text-white text-[clamp(24px,2.6vw,36px)] leading-[1.1] tracking-tightest group-hover:translate-x-1 transition-transform duration-300 inline-flex items-center gap-3">
+          <h3 className="font-sans font-medium text-white text-[clamp(20px,2.6vw,36px)] leading-[1.1] tracking-tightest group-hover:translate-x-1 transition-transform duration-300 inline-flex items-center gap-3 break-words">
             {project.title}
             {project.live && (
               <span className="relative inline-flex h-2.5 w-2.5" aria-label="Live">
@@ -52,7 +52,7 @@ export const ProjectRow = ({ project }) => {
         </div>
 
         {/* Tag */}
-        <div className="md:w-[260px] shrink-0 md:text-right flex items-center md:justify-end gap-3">
+        <div className="md:w-[260px] shrink-0 md:text-right flex items-center md:justify-end gap-3 flex-wrap">
           <MonoTag className="group-hover:text-text-body transition-colors">{project.tag}</MonoTag>
           <motion.span
             className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full border border-hair text-text-meta group-hover:border-accent group-hover:text-accent group-hover:bg-accent/5 transition-all"
@@ -75,11 +75,34 @@ export const ProjectRow = ({ project }) => {
             className="overflow-hidden"
           >
             <div className="pb-8 md:pl-[176px] flex flex-col gap-6">
-              <p className="text-text-body text-[16px] leading-[1.6] max-w-[800px]">
-                {project.desc}
-              </p>
+              {project.domain && (
+                <MonoTag className="!text-accent">DOMAIN · {project.domain}</MonoTag>
+              )}
 
-              <div className="flex flex-wrap gap-2">
+              {project.problem ? (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 max-w-[860px]">
+                  <div className="flex flex-col gap-2">
+                    <MonoTag>PROBLEM</MonoTag>
+                    <p className="text-neutral-300 text-[15px] leading-[1.6] break-words">{project.problem}</p>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <MonoTag>BUILT</MonoTag>
+                    <p className="text-neutral-300 text-[15px] leading-[1.6] break-words">{project.built}</p>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <MonoTag className="!text-accent">IMPACT</MonoTag>
+                    <p className="text-white text-[15px] leading-[1.6] break-words">{project.impact}</p>
+                  </div>
+                </div>
+              ) : (
+                <p className="text-neutral-300 text-[16px] leading-[1.6] max-w-[800px] break-words">
+                  {project.desc}
+                </p>
+              )}
+
+              <div className="flex flex-col gap-2">
+                <MonoTag>STACK</MonoTag>
+                <div className="flex flex-wrap gap-2">
                 {project.stack.map((tech, i) => (
                   <motion.span
                     key={tech}
@@ -91,6 +114,7 @@ export const ProjectRow = ({ project }) => {
                     {tech}
                   </motion.span>
                 ))}
+                </div>
               </div>
             </div>
           </motion.div>

@@ -9,7 +9,7 @@ const principles = [
 
 export const Philosophy = () => {
   return (
-    <section id="philosophy" className="relative pt-[160px] pb-16">
+    <section id="philosophy" className="relative pt-[120px] md:pt-[160px] pb-16 scroll-mt-24">
       {/* Marquee strip */}
       <Marquee items={[
         'Build to ship',

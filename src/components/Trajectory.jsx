@@ -7,13 +7,13 @@ export const Trajectory = () => {
   return (
     <motion.section
       id="trajectory"
-      className="relative pt-[160px] pb-16"
+      className="relative pt-[120px] md:pt-[160px] pb-16 scroll-mt-24"
       initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="03" kicker="IMPACT" title="Trajectory." ghost="03" />
+      <SectionHeader index="05" kicker="IMPACT" title="Trajectory." ghost="05" />
 
       <div className="flex flex-col border-t border-hair">
         {impact.map((item, i) => (

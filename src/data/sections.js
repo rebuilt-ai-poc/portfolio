@@ -2,11 +2,12 @@
 
 export const sections = [
   { id: 'hero',       label: 'Intro' },
+  { id: 'solve',      label: 'What I Solve' },
   { id: 'projects',   label: 'Work' },
+  { id: 'services',   label: 'Services' },
   { id: 'about',      label: 'Background' },
-  { id: 'trajectory', label: 'Impact' },
   { id: 'stack',      label: 'Stack' },
-  { id: 'tinkering',  label: 'Tinkering' },
-  { id: 'philosophy', label: 'Principles' },
+  { id: 'fit',        label: 'Best Fit' },
+  { id: 'audit',      label: 'Free Audit' },
   { id: 'contact',    label: 'Contact' }
 ];
