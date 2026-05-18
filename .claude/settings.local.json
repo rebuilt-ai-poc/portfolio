@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npx vite *)",
+      "Bash(npm install *)",
+      "Bash(curl -sL https://glass-ui.com/r/styles/glass.json)",
+      "Bash(curl -sL \"https://glass-ui.com/r/styles/glass\" -H \"Accept: application/json\")",
+      "Bash(curl -sIL \"https://glass-ui.com/r/styles/glass\")",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)"
+    ]
+  }
+}
