@@ -123,6 +123,19 @@ export const projects = [
   },
   {
     id: "11",
+    title: "Deloitte Design — GenAI Document Automation Platform",
+    live: true,
+    tag: "DELOITTE · GENAI DOCUMENT AUTOMATION",
+    domain: "Enterprise · GenAI Document Platform",
+    problem: "Deloitte teams were losing high-value delivery time manually creating RFP responses, proposal decks, DOCX reports, and PDFs while trying to preserve approved brand standards, client templates, and formatting consistency.",
+    built: "Designed and developed Deloitte Design, a governed GenAI document automation platform that turns user inputs, uploaded reference documents, and approved templates into reusable, brand-compliant business deliverables. Built with FastAPI, React, Pydantic, OpenAI, FAISS, PPTX/DOCX renderers, and reusable generation assets including SKILL.md, DESIGN.md, and tokens.css.",
+    impact: "Created a plug-and-play workflow that compresses document creation from manual drafting into a controlled AI-assisted pipeline: users fill a structured form, upload supporting documents, review AI-generated HTML section-wise, regenerate content through chat, and export template-compliant PPTX/DOCX deliverables with reduced rework and stronger brand governance.",
+    desc: "Governed GenAI document automation platform turning inputs, references, and approved templates into brand-compliant PPTX/DOCX/PDF deliverables.",
+    stack: ["FastAPI", "React", "Pydantic", "OpenAI", "FAISS", "PPTX Renderer", "DOCX Renderer", "Tokens CSS", "Prompt Engineering"],
+    iconName: "FileText"
+  },
+  {
+    id: "12",
     title: "Rebuilt",
     live: true,
     tag: "PERSONAL · CONSUMER AI",

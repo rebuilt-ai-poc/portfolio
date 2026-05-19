@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Layers, Activity, Cpu, Database, LineChart, Bot, Workflow, MessageSquare, Users, GitBranch, Dumbbell, Plus, X } from 'lucide-react';
+import { Layers, Activity, Cpu, Database, LineChart, Bot, Workflow, MessageSquare, Users, GitBranch, Dumbbell, FileText, Plus, X } from 'lucide-react';
 import { MonoTag } from './primitives/MonoTag';
 
 const iconMap = {
-  Layers, Activity, Cpu, Database, LineChart, Bot, Workflow, MessageSquare, Users, GitBranch, Dumbbell
+  Layers, Activity, Cpu, Database, LineChart, Bot, Workflow, MessageSquare, Users, GitBranch, Dumbbell, FileText
 };
 
 export const ProjectRow = ({ project }) => {
