@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Download, Mail, ArrowLeft } from 'lucide-react';
 
-const RESUME_FILE = '/Profile.pdf';
+const RESUME_FILE = '/Aditya_Kadam_Resume_new.pdf';
 const RESUME_DOWNLOAD_NAME = 'Aditya-Kadam-Resume.pdf';
 
 const HIGHLIGHTS = [
@@ -135,7 +135,7 @@ export default function ResumePage() {
               Preview
             </span>
             <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-text-meta">
-              Profile.pdf
+              Aditya-Kadam-Resume.pdf
             </span>
           </div>
           <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
