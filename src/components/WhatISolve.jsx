@@ -6,17 +6,17 @@ const items = [
   {
     icon: Workflow,
     title: 'Enterprise AI Automation',
-    desc: 'Internal tools, reviewers, copilots, workflow automations, approval flows, and operational assistants that reduce repetitive manual work.',
+    desc: 'Your team is doing the same thing manually every day — reviewing documents, chasing approvals, pulling reports. I build the AI layer that handles it automatically so your people focus on decisions, not data entry.',
   },
   {
     icon: Database,
     title: 'RAG & Knowledge Systems',
-    desc: 'Chat and retrieval systems over documents, databases, cloud drives, policies, financial data, and enterprise knowledge.',
+    desc: 'Your knowledge is locked in PDFs, SharePoints, and databases nobody can search properly. I build systems where your team asks a question and gets a sourced, accurate answer — not a keyword match.',
   },
   {
     icon: Bot,
     title: 'Agentic AI Workflows',
-    desc: 'Multi-step AI workflows that route tasks, call tools, self-review outputs, validate results, and keep humans in the loop where needed.',
+    desc: 'Some workflows are too complex for a single AI call — they need routing, tool use, self-correction, and human checkpoints. I build agents that handle the full sequence and know when to escalate.',
   },
   {
     icon: TrendingUp,

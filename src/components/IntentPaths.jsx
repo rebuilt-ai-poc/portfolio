@@ -42,7 +42,7 @@ export const IntentPaths = () => {
             Hiring for AI Solution Architect or GenAI Engineer roles?
           </h3>
           <p className="text-neutral-300 text-[15px] md:text-[16px] leading-[1.6] mb-7">
-            I bring hands-on architecture, engineering, delivery, and client-facing execution across enterprise AI systems — RAG, GenAI, agentic workflows, automation.
+            Shipped 7 enterprise AI systems at Deloitte across 4 countries — often as the sole engineer from architecture through deployment. RAG, GenAI, agentic workflows, automation.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Link
@@ -73,7 +73,7 @@ export const IntentPaths = () => {
             Have a workflow that AI should automate?
           </h3>
           <p className="text-neutral-300 text-[15px] md:text-[16px] leading-[1.6] mb-7">
-            I help scope, architect, and build the first working production-grade version — across documents, support, reporting, decision, and operational workflows.
+            I take your AI idea from "we should do something with AI" to a working production system — scoped, built, and deployed. No experiments. No POC decks. A working system.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <button

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowUpRight, Check } from 'lucide-react';
+import { Sparkles, ArrowUpRight, Check, Clock } from 'lucide-react';
 import { MonoTag } from './primitives/MonoTag';
 
 const bullets = [
@@ -43,6 +43,10 @@ export const FreeAuditCTA = () => {
             <p className="text-neutral-300 text-[15px] md:text-[16.5px] leading-[1.6] max-w-2xl">
               Share your document process, support flow, reporting process, or business problem.
               I'll tell you what can be automated, what should not be automated, and what the first MVP should look like.
+            </p>
+            <p className="flex items-center gap-2 text-text-meta text-[13px] md:text-[14px] leading-[1.5]">
+              <Clock size={13} className="text-text-meta shrink-0" />
+              I'll send my assessment within 48 hours.
             </p>
           </div>
 

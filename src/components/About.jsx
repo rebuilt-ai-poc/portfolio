@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { SectionHeader } from './primitives/SectionHeader';
 import { MonoTag } from './primitives/MonoTag';
 import { Counter } from './primitives/Counter';
+import { stats } from '../data/stats';
 
 const meta = [
   { k: 'ROLE',     v: 'AI Solution Architect' },
@@ -9,13 +10,6 @@ const meta = [
   { k: 'LOCATION', v: 'Global · APAC' },
   { k: 'FOCUS',    v: 'Agentic AI & GenAI' },
   { k: 'DOMAINS',  v: 'Enterprise · Health · Fin' },
-];
-
-const stats = [
-  { value: 11, suffix: '+', label: 'AI systems shipped across enterprise + startups' },
-  { value: 4,  suffix: '',  label: 'Countries · India · Malaysia · Singapore · Australia' },
-  { value: 6,  suffix: '',  label: 'Industries · health · finance · retail · consulting · hiring · fitness' },
-  { value: 40, suffix: '%', label: 'Faster builds via reusable AI modules' },
 ];
 
 export const About = () => {

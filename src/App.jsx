@@ -3,6 +3,7 @@ import { SectionRail } from './components/primitives/SectionRail';
 import { ScrollToTop } from './components/primitives/ScrollToTop';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { ProofStats } from './components/ProofStats';
 import { IntentPaths } from './components/IntentPaths';
 import { WhatISolve } from './components/WhatISolve';
 import { Projects } from './components/Projects';
@@ -29,18 +30,19 @@ function App() {
       <Hero />
 
       <main className="max-w-shell mx-auto px-5 sm:px-6 md:px-10 relative w-full">
+        <ProofStats />
         <IntentPaths />
         <WhatISolve />
         <Projects />
         <SideProjects />
         <Services />
+        <FreeAuditCTA />
         <About />
         <Trajectory />
         <Stack />
         <BestFit />
         <Tinkering />
         <Philosophy />
-        <FreeAuditCTA />
         <Contact />
         <Footer />
       </main>

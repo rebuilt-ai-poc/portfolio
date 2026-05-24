@@ -9,6 +9,7 @@ import { ArrowUpRight, Copy, Check } from 'lucide-react';
 const EMAIL = 'adityakadam.de@gmail.com';
 const LINKEDIN = 'https://www.linkedin.com/in/adityakadamm';
 const GITHUB = 'https://github.com/rebuilt-ai-poc';
+const AVAILABILITY = 'Currently available for 2 new engagements · June 2026 start';
 
 const PROJECT_TYPES = [
   'Hiring / Job Opportunity',
@@ -80,6 +81,13 @@ export const Contact = () => {
         <h3 className="font-sans font-medium tracking-tightest leading-[1.05] text-white text-[clamp(28px,4.6vw,56px)] max-w-[22ch] break-words">
           Have a workflow, product, or data problem that AI should solve? <span className="text-accent">Let's build the first working version.</span>
         </h3>
+        <p className="mt-5 flex items-center gap-2 text-[14px] md:text-[15px] text-neutral-200 leading-[1.5]">
+          <span className="relative inline-flex h-2 w-2 shrink-0">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-70" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-accent shadow-[0_0_8px_rgba(200,240,74,0.7)]" />
+          </span>
+          {AVAILABILITY}
+        </p>
         <p className="mt-5 text-neutral-300 text-[15px] md:text-[17px] leading-[1.6] max-w-2xl">
           I work best with teams that want production-grade GenAI, RAG, agentic automation, or AI product architecture — not vague AI experiments.
         </p>

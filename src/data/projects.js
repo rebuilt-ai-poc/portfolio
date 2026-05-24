@@ -13,6 +13,7 @@ export const projects = [
     stack: ["Python", "TensorFlow", "Traditional ML", "Advanced Time Series", "SMOTE", "Data Analysis"],
     iconName: "LineChart"
   },
+
   {
     id: "02",
     title: "Cancer Companion Chatbot",
@@ -28,6 +29,7 @@ export const projects = [
   {
     id: "03",
     title: "MyAssist — No-Code GenAI Builder",
+    outcome: "AI tool deployment from weeks to minutes. Zero engineering tickets.",
     tag: "DELOITTE MALAYSIA · ENTERPRISE GENAI",
     domain: "Enterprise · GenAI Platform",
     problem: "Internal teams needed chat apps, reviewers, and automations but every build required a new bespoke engineering cycle.",
@@ -40,6 +42,7 @@ export const projects = [
   {
     id: "04",
     title: "IBIC — Financial & Risk Chatbot",
+    outcome: "Eliminated manual data-pulling and report-formatting. Briefing cycle fully automated.",
     tag: "DELOITTE INDIA · FINANCE AGENT",
     domain: "Finance · Agentic RAG",
     problem: "Finance and risk teams worked across cloud drives, databases, and uploaded reports — answers required manual digging across silos.",
@@ -52,6 +55,7 @@ export const projects = [
   {
     id: "05",
     title: "Finance Reviewer",
+    outcome: "Finance document review automated end-to-end.",
     tag: "UNILEVER · FINANCE LLM",
     domain: "Finance · LLM Reviewer",
     problem: "Financial reviews were repetitive, checklist-driven, and dependent on senior reviewer time for catch-and-flag work.",
@@ -64,6 +68,7 @@ export const projects = [
   {
     id: "06",
     title: "Agentic Data Modeller",
+    outcome: "Compressed data-modelling timeline from 6 months → 4 months. -33%.",
     tag: "WESTPAC AUSTRALIA · AGENTIC AI",
     domain: "Banking · Agentic AI",
     problem: "Data modelling and review cycles were slow, checklist-heavy, and dependent on repeated human review.",
@@ -76,6 +81,7 @@ export const projects = [
   {
     id: "07",
     title: "AI Navigator — Competitor Intelligence",
+    outcome: "Replaced hours of manual research with on-demand intelligence. Reports in seconds, not half-days.",
     tag: "DELOITTE MY · IN · AU · STRATEGY RAG",
     domain: "Consulting · Strategy RAG",
     problem: "Strategy teams spent days pulling competitor news, tech updates, corporate moves, and financials into usable insight.",
@@ -88,6 +94,7 @@ export const projects = [
   {
     id: "08",
     title: "Customer Experience Chatbot",
+    outcome: "Sommelier-style personalisation at scale for Singapore's largest retailer.",
     tag: "FAIRPRICE SINGAPORE · CX AGENT",
     domain: "Retail · CX Agent",
     problem: "Customers asked questions across products, memberships, orders, events, and personalised suggestions — handled by fragmented support flows.",
@@ -100,6 +107,7 @@ export const projects = [
   {
     id: "09",
     title: "HR AI — Hiring Intelligence",
+    outcome: "Pre-qualified shortlists instead of raw applicant pools. Faster time-to-hire.",
     tag: "DELOITTE SINGAPORE · HIRING",
     domain: "Hiring · Agentic AI",
     problem: "Recruiters drowned in noisy candidate pipelines and struggled to surface high-signal matches at speed.",
@@ -125,6 +133,7 @@ export const projects = [
     id: "11",
     title: "Deloitte Design — GenAI Document Automation Platform",
     live: true,
+    outcome: "RFP responses and proposal decks in minutes. Brand-compliant output every time.",
     tag: "DELOITTE · GENAI DOCUMENT AUTOMATION",
     domain: "Enterprise · GenAI Document Platform",
     problem: "Deloitte teams were losing high-value delivery time manually creating RFP responses, proposal decks, DOCX reports, and PDFs while trying to preserve approved brand standards, client templates, and formatting consistency.",

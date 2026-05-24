@@ -19,6 +19,8 @@ const offers = [
     cta: 'Start with Strategy',
     type: 'AI Strategy Sprint',
     subject: 'I want to start with an AI Strategy Sprint.',
+    pricing: 'Starting from ₹75,000 · Delivered in 5 business days',
+    guarantee: "If you don't have a clear build plan, full refund.",
   },
   {
     icon: MessageSquare,
@@ -35,6 +37,8 @@ const offers = [
     cta: 'Build a RAG MVP',
     type: 'RAG / Chatbot MVP',
     subject: 'I want to build a RAG / chatbot MVP.',
+    pricing: 'Starting from ₹3,00,000 · Working MVP in 3 weeks',
+    guarantee: 'Production-ready or we keep building.',
   },
   {
     icon: Workflow,
@@ -51,6 +55,8 @@ const offers = [
     cta: 'Automate a Workflow',
     type: 'Agentic Automation',
     subject: 'I want to automate a workflow with agentic AI.',
+    pricing: 'Starting from ₹5,00,000 · Timeline scoped per workflow',
+    guarantee: 'Shipped to production or scoped until it is.',
   },
   {
     icon: Boxes,
@@ -67,6 +73,8 @@ const offers = [
     cta: 'Build the Product',
     type: 'AI Product Build',
     subject: 'I want to build an AI product end-to-end.',
+    pricing: 'Engagement-based · Scoped on first call',
+    guarantee: 'Architecture delivered before any build begins.',
   },
 ];
 
@@ -92,7 +100,7 @@ export const Services = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
-        {offers.map(({ icon: Icon, label, title, best, deliverables, cta, type, subject }, i) => (
+        {offers.map(({ icon: Icon, label, title, best, deliverables, cta, type, subject, pricing, guarantee }, i) => (
           <motion.div
             key={title}
             initial={{ opacity: 0, y: 14 }}
@@ -123,6 +131,20 @@ export const Services = () => {
               ))}
             </ul>
             <div className="mt-auto">
+              {(pricing || guarantee) && (
+                <div className="border-t border-hair pt-4 mb-5 flex flex-col gap-1.5">
+                  {pricing && (
+                    <p className="text-[13px] md:text-[13.5px] leading-[1.5] text-text-meta break-words">
+                      {pricing}
+                    </p>
+                  )}
+                  {guarantee && (
+                    <p className="text-[13px] md:text-[13.5px] leading-[1.5] text-accent break-words">
+                      {guarantee}
+                    </p>
+                  )}
+                </div>
+              )}
               <button
                 onClick={() => handleClick(type, subject)}
                 className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-5 py-2.5 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-accent hover:bg-accent hover:text-bg-base transition-all"

@@ -49,6 +49,11 @@ export const ProjectRow = ({ project }) => {
               </span>
             )}
           </h3>
+          {project.outcome && (
+            <p className="mt-2 text-text-meta text-[13px] md:text-[14px] leading-[1.5] break-words max-w-[60ch]">
+              {project.outcome}
+            </p>
+          )}
         </div>
 
         {/* Tag */}

@@ -21,8 +21,6 @@ const fadeUp = {
   }),
 };
 
-const SKILL_TAGS = ['GenAI', 'RAG', 'Agentic AI', 'Azure', 'GCP', 'AWS', 'LangGraph', 'FastAPI', 'React'];
-
 export const Hero = () => {
   return (
     <GlobeHero id="hero" className="min-h-[100svh] overflow-x-hidden">
@@ -93,26 +91,8 @@ export const Hero = () => {
           variants={fadeUp}
           className="max-w-3xl text-[16px] md:text-[19px] text-neutral-300 leading-relaxed"
         >
-          I design and build GenAI, RAG, agentic workflow, and automation products for enterprises and startups — reducing manual work, accelerating decisions, and turning complex operations into scalable AI systems.
+          7 enterprise platforms. 4 countries. Deloitte, Westpac, FairPrice Singapore. All shipped solo, all in production.
         </motion.p>
-
-        {/* 4. Skill tags — Glass UI */}
-        <motion.div
-          custom={3}
-          initial="hidden"
-          animate="show"
-          variants={fadeUp}
-          className="flex flex-wrap gap-2.5 opacity-100"
-        >
-          {SKILL_TAGS.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-full border border-white/20 bg-white/[0.08] px-4 py-2 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur-md shadow-[0_1px_0_rgba(255,255,255,0.06)_inset] transition-colors hover:border-accent/60 hover:bg-accent/15 hover:text-accent"
-            >
-              {tag}
-            </span>
-          ))}
-        </motion.div>
 
         {/* 5. CTAs */}
         <motion.div
@@ -124,10 +104,10 @@ export const Hero = () => {
         >
           <Magnetic>
             <Button onClick={() => {
-              window.dispatchEvent(new CustomEvent('prefill-contact', { detail: { type: 'AI Strategy Sprint', subject: 'I want to build an AI system.' } }));
-              document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+              window.dispatchEvent(new CustomEvent('prefill-contact', { detail: { type: 'AI Strategy Sprint', subject: 'I want a free AI automation audit for my workflow / project.' } }));
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
             }}>
-              Build an AI System <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
+              Book a Free AI Audit <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
             </Button>
           </Magnetic>
           <Magnetic>
