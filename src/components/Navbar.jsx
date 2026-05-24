@@ -18,6 +18,7 @@ export const Navbar = () => {
 
   const links = [
     { label: 'Work',     href: '#projects' },
+    { label: 'Side',     href: '#side-projects' },
     { label: 'Services', href: '#services' },
     { label: 'About',    href: '#about' },
     { label: 'Contact',  href: '#contact' },

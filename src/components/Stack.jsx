@@ -13,7 +13,7 @@ export const Stack = () => {
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="06" kicker="TOOLS" title="Stack." ghost="06" />
+      <SectionHeader index="07" kicker="TOOLS" title="Stack." ghost="07" />
 
       <p className="text-text-body text-[16px] mb-12 max-w-[60ch]">
         Comfortable with whatever platform the work calls for. Current rotation:

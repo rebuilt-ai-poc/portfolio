@@ -13,7 +13,7 @@ export const Trajectory = () => {
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="05" kicker="IMPACT" title="Trajectory." ghost="05" />
+      <SectionHeader index="06" kicker="IMPACT" title="Trajectory." ghost="06" />
 
       <div className="flex flex-col border-t border-hair">
         {impact.map((item, i) => (

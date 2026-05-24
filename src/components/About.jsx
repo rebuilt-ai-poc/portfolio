@@ -28,7 +28,7 @@ export const About = () => {
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="04" kicker="WHO" title="Background." ghost="04" />
+      <SectionHeader index="05" kicker="WHO" title="Background." ghost="05" />
 
       <div className="flex flex-col md:flex-row gap-12 md:gap-8">
         {/* Left Meta */}

@@ -74,7 +74,7 @@ export const Contact = () => {
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="09" kicker="GET IN TOUCH" title="Contact." ghost="09" />
+      <SectionHeader index="10" kicker="GET IN TOUCH" title="Contact." ghost="10" />
 
       <div className="mb-12 md:mb-16">
         <h3 className="font-sans font-medium tracking-tightest leading-[1.05] text-white text-[clamp(28px,4.6vw,56px)] max-w-[22ch] break-words">

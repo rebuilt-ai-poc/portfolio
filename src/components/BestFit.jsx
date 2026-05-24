@@ -27,7 +27,7 @@ export const BestFit = () => {
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="07" kicker="SELECTIVITY" title="Best fit." ghost="07" />
+      <SectionHeader index="08" kicker="SELECTIVITY" title="Best fit." ghost="08" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
         <div className="rounded-card border border-accent/25 bg-accent/[0.04] backdrop-blur-md p-6 md:p-8">

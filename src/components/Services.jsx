@@ -85,7 +85,7 @@ export const Services = () => {
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="03" kicker="SERVICES / WORK WITH ME" title="AI build offers for teams that need outcomes." ghost="03" />
+      <SectionHeader index="04" kicker="SERVICES / WORK WITH ME" title="AI build offers for teams that need outcomes." ghost="04" />
 
       <p className="text-neutral-300 text-[16px] md:text-[18px] leading-[1.6] max-w-3xl mb-10">
         Whether you need clarity, an MVP, or a production-ready AI workflow, I package the work around business problems and delivery milestones — not vague experiments.

@@ -6,6 +6,7 @@ import { Hero } from './components/Hero';
 import { IntentPaths } from './components/IntentPaths';
 import { WhatISolve } from './components/WhatISolve';
 import { Projects } from './components/Projects';
+import { SideProjects } from './components/SideProjects';
 import { Services } from './components/Services';
 import { About } from './components/About';
 import { Trajectory } from './components/Trajectory';
@@ -31,6 +32,7 @@ function App() {
         <IntentPaths />
         <WhatISolve />
         <Projects />
+        <SideProjects />
         <Services />
         <About />
         <Trajectory />

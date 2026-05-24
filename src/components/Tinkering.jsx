@@ -17,7 +17,7 @@ export const Tinkering = () => {
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <SectionHeader index="08" kicker="OUTSIDE" title="Tinkering." ghost="08" />
+      <SectionHeader index="09" kicker="OUTSIDE" title="Tinkering." ghost="09" />
 
       <p className="text-text-body text-[16px] mb-12 max-w-[60ch]">
         Outside of client work, I keep my hands busy — research notebooks, side prototypes, half-built tools.
